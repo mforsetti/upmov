@@ -96,6 +96,7 @@ This script is designed without extra packages required, so a standard Python 3.
 
 1. This script uses SQLite as database backend, therefore it'll suffer some problems with scalability and *maybe* performance.
 1. If you're using `user` and `group` options, make sure `user` and `group` option values had sufficient permissions to access both data directory (default `/var/lib/upmov`, see `common.DATA_DIR`) and data file (default `/var/lib/upmov/auth.db`, see `common.DB_FILE`)
+1. Always check if your distro already has user dedicated to run OpenVPN services. Previous caveat point also applies here.
 
 ## License
 upmov is licensed under the terms of the MIT license. Full text of the license can be read under LICENSE file in project root directory.

@@ -74,7 +74,6 @@ This script is designed without extra packages required, so a standard Python 3.
     # in server.conf
 
     ...
-    auth-user-pass
     auth-user-pass-verify /path/to/upmov/verify-auth.py via-file
     username-as-common-name
     # note that client-cert-not-required is deprecated in OpenVPN 2.4 and will be removed in 2.5

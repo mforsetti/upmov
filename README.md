@@ -93,6 +93,11 @@ This script is designed without extra packages required, so a standard Python 3.
 
 1. Try to login from your client with username and password.
 
+## Caveats
+
+1. This script uses SQLite as database backend, therefore it'll suffer some problems with scalability and *maybe* performance.
+1. If you're using `user` and `group` options, make sure `user` and `group` option values had sufficient permissions to access both data directory (default `/var/lib/upmov`, see `common.DATA_DIR`) and data file (default `/var/lib/upmov/auth.db`, see `common.DB_FILE`)
+
 ## License
 upmov is licensed under the terms of the MIT license. Full text of the license can be read under LICENSE file in project root directory.
 
@@ -101,4 +106,4 @@ All trademarks, copyrights, product names and logos mentioned are property of th
 
 ## Footnotes
 1. [OpenVPN - Using Alternative Authentication Methods](https://openvpn.net/community-resources/using-alternative-authentication-methods/)
-1. [OpenVPN - Reference manual for OpenVPN 2.4](https://openvpn.net/community-resources/reference-manual-for-openvpn-2-4/) *see auth-user-pass, auth-user-pass-verify, username-as-common-name, client-cert-not-required, and verify-client-cert*
+1. [OpenVPN - Reference manual for OpenVPN 2.4](https://openvpn.net/community-resources/reference-manual-for-openvpn-2-4/) <sup>*see `auth-user-pass`, `auth-user-pass-verify`, `username-as-common-name`, `client-cert-not-required`, and `verify-client-cert`*</sup>

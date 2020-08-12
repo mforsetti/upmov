@@ -75,6 +75,7 @@ This script is designed without extra packages required, so a standard Python 3.
 
     ...
     auth-user-pass-verify /path/to/upmov/verify-auth.py via-file
+    script-security 2
     username-as-common-name
     # note that client-cert-not-required is deprecated in OpenVPN 2.4 and will be removed in 2.5
     client-cert-not-required
@@ -99,7 +100,7 @@ This script is designed without extra packages required, so a standard Python 3.
 1. Always check if your distro already has user dedicated to run OpenVPN services. Previous caveat point also applies here.
 
 ## License
-upmov is licensed under the terms of the MIT license. Full text of the license can be read under LICENSE file in project root directory.
+upmov is licensed under the terms of the Apache license version 2.0. Full text of the license can be read under LICENSE file in project root directory.
 
 ## Copyrights and Trademarks
 All trademarks, copyrights, product names and logos mentioned are property of their respective owners. All rights reserved.
